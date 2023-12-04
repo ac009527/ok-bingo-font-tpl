@@ -11,8 +11,8 @@
     "prd": "npx vite --mode prd -c vite.config",
     "build:dev": "NODE_OPTIONS=\"--max-old-space-size=4096\" npx --node-options=\"--max-old-space-size=4096\" --max-old-space-size=4096 vite build --mode dev -c vite.config",
     "build:test": "NODE_OPTIONS=\"--max-old-space-size=4096\" npx --node-options=\"--max-old-space-size=4096\" --max-old-space-size=4096 vite build --mode test -c vite.config",
-    "build:uat": "yarn h5:build:prd",
-    "build:prd": "cd package/h5 && NODE_OPTIONS=\"--max-old-space-size=4096\" npx --node-options=\"--max-old-space-size=4096\" --max-old-space-size=4096 vite build --mode prd -c vite.config"
+    "build:uat": "yarn build:prd",
+    "build:prd": "NODE_OPTIONS=\"--max-old-space-size=4096\" npx --node-options=\"--max-old-space-size=4096\" --max-old-space-size=4096 vite build --mode prd -c vite.config"
   },
   "dependencies": {
     "@ebay/nice-modal-react": "ebay/nice-modal-react",
@@ -28,7 +28,7 @@
     "react-dom": "^18.2.0",
     "react-i18next": "^13.2.2",
     "react-router-dom": "^6.16.0",
-    "sass": "^1.68.0",
+    "sass": "^1.69.5",
     "unplugin-auto-import": "^0.16.6",
     "vite-plugin-commonjs": "^0.9.0",
     "vite-plugin-eslint": "^1.8.1",
